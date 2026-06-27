@@ -1,0 +1,15 @@
+services:
+  stream-bot:
+    build: .
+    image: tg-stream-bot:latest
+    container_name: tg-stream-bot
+    restart: unless-stopped
+    env_file: .env
+    # Bound to loopback only: Caddy reaches it locally on the same Pi.
+    # Port 8082 is NOT exposed on the LAN or the tailnet.
+    ports:
+      - "127.0.0.1:8082:8082"
+    # Persist the Pyrogram login so restarts don't re-authenticate
+    # (avoids Telegram FloodWaits on rapid restarts).
+    volumes:
+      - ./session:/app/session
