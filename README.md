@@ -1,4 +1,4 @@
-# 🎬 tg-stream-bot
+# 🎬 tg-stream-link-bot
 
 > Turn any file you send a Telegram bot into an **instant, seekable streaming link** for VLC, MX Player, or your browser.
 
