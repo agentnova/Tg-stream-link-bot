@@ -132,4 +132,4 @@ responsible for complying with Telegram's Terms of Service and applicable law.
 
 ## 📄 License
 
-[MIT](LICENSE) © 2026 \<YOUR NAME\>
+[MIT](LICENSE) © 2026
